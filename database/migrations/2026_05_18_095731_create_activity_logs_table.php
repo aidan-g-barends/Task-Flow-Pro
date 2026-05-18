@@ -21,7 +21,7 @@ return new class extends Migration
             $table->text('user_agent')->nullable();
             $table->timestamps();
 
-            $table->index(['subject_type', 'subject_id']);
+        
             $table->index('user_id');
             $table->index('action');
             $table->index('created_at');
